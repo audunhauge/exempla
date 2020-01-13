@@ -411,10 +411,6 @@ Error message and password prompt
 
 <li>Math-test</li>
 
-<li>New Tiddler</li>
-
-<li>Testing</li>
-
 <li>Untitled</li>
 
 </ul>
@@ -9942,7 +9938,7 @@ Error message and password prompt
 <div created="20200113175455697" modified="20200113175455697" title="$:/state/tree/$:/library/">
 <pre>show</pre>
 </div>
-<div created="20200113212006866" list="db-components" modified="20200113212015321" title="$:/StoryList">
+<div created="20200113212006866" list="Math-test" modified="20200113212244320" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -10929,25 +10925,6 @@ $$\ce{Hg^2+ -&gt;[I-] HgI2 -&gt;[I-] [Hg^{II}I4]^2-}$$
 
 $$\ce{A -&gt;[H2O] B}$$ 
 </pre>
-</div>
-<div created="20200110182052813" modified="20200110182312648" tags="" title="New Tiddler" type="text/vnd.tiddlywiki">
-<pre>* DBForeign  [&quot;foreign&quot;, &quot;label&quot;, &quot;field&quot;, &quot;sql&quot;, &quot;type&quot;, &quot;table&quot;, &quot;values&quot;];
-   ** listen for updates of table
-* DBInsert      [&quot;table&quot;, &quot;fields&quot;, &quot;foreign&quot;, &quot;connected&quot;];
-** emit update tagged with table
-* DBList         [&quot;sql&quot;, &quot;service&quot;, &quot;cssimport&quot;, &quot;connected&quot;, &quot;update&quot;];
-** listens for  dbUpdate.table === update
-* DBTable     [&quot;fields&quot;, &quot;sql&quot;, &quot;update&quot;, &quot;key&quot;, &quot;connected&quot;, &quot;delete&quot;];
-** listens for update containing [source,field]  id of component, field of interesr
-* DBUpdate   [&quot;table&quot;, &quot;key&quot;, &quot;fields&quot;, &quot;foreign&quot;, &quot;update&quot;, &quot;connected&quot;];
-** update is true if we can save changes (else just a view)
-** listens to dbUpdate for connected
-</pre>
-</div>
-<div created="20200112094635238" modified="20200112094935195" tags="[[New Tiddler]]" title="Testing">
-<pre>I want the components to sign the messages they emit if they are the source. Messages that are resent in response to recieved messages keep original signature. Thus a component can detect a loop (source === my name).
-
-The signature will be id + timestamp, should be unique even if a component is copy-pasted without change of ''id''</pre>
 </div>
 <div title="Untitled">
 <pre>Yes</pre>
